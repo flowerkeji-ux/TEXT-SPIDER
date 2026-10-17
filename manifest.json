@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "TEXT SPIDER",
+  "version": "1.0",
+  "permissions": ["activeTab", "scripting", "sidePanel"],
+  "host_permissions": ["<all_urls>"],
+
+  "background": {
+    "service_worker": "idkaname.js"
+  },
+  "action": {
+    "default_title": "Open Text Spider"
+  },
+  "side_panel": {
+    "default_path": "SearchWindow.html"
+  }
+}

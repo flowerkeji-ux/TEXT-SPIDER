@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+ <style>
+    * {
+      box-sizing: border-box;
+    }
+
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Orbitron", sans-serif;
+      color: #f1eaff;
+      background:
+        linear-gradient(-45deg, #0c0c30 0%, #3b0e17 50%, #090b26 100%);
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .search-box {
+      width: 100%;
+      max-width: 340px;
+      padding: 28px 22px;
+      text-align: center;
+      background: linear-gradient(145deg, rgba(24, 17, 61, 0.94), rgba(10, 13, 39, 0.96));
+      border: 1px solid #c75a5a;
+      border-radius: 16px;
+      box-shadow:
+        0 0 26px rgba(132, 54, 255, 0.28),
+        inset 0 0 24px rgba(70, 36, 132, 0.2);
+      position: relative;
+      z-index: 1;
+    }
+
+    .search-box h1 {
+      margin: 0 0 24px;
+      color: #f4eaff;
+      font-size: 27px;
+      letter-spacing: 0.04em;
+      text-shadow: 0 0 14px rgba(190, 120, 255, 0.8);
+    }
+
+    .search-box input {
+      width: 100%;
+            box-shadow: 0 0 12px rgba(190, 103, 255, 0.45);
+
+      padding: 12px 15px;
+      border: 1px solid #c75a5a;
+      border-radius: 30px;
+      outline: none;
+      background-color: rgba(5, 7, 27, 0.82);
+      color: #c75a5a;
+      font-size: 16px;
+      font-family: inherit;
+    }
+
+
+    .search-box input::placeholder {
+      color: #b5a9ce;
+    }
+
+    .search-box input:focus {
+      border-color: #5ac761;
+      box-shadow: 0 0 12px rgba(190, 103, 255, 0.45);
+    }
+
+    .search-box button {
+      margin-top: 16px;
+      padding: 10px 25px;
+      border: 1px solid #c75a5a;
+        box-shadow: 0 0 12px rgba(190, 103, 255, 0.45);
+
+      border-radius: 30px;
+      background: linear-gradient(135deg, #430629, #2d1248);
+      color: white;
+      font-size: 16px;
+      font-family: inherit;
+      cursor: pointer;
+      box-shadow: 0 0 16px rgba(145, 69, 255, 0.35);
+      transition: box-shadow 150ms ease, transform 150ms ease;
+    }
+
+    .search-box button:hover {
+      box-shadow: 0 0 10px rgba(189, 115, 255, 0.65);
+      transform: scale(1.05);
+    }
+
+    #result {
+      margin: 16px 0 0;
+      color: #c75a5a;
+      font-size: 16px;
+      min-height: 1.2em;
+    }
+
+
+
+    @media (max-width: 600px) {
+      .search-box {
+        padding: 22px 16px;
+      }
+    }
+  </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <h1>Search Window</h1>
+            <input id="Search-Input" type="text" placeholder="Search for a word">
+            <button id="Search-Button">Search</button>
+            <p id="result"></p>
+          </div>
+
+    </div>
+    
+
+<script src="TheDoer.js"></script>
+
+
+</body>
+</html>
